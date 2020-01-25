@@ -32,7 +32,7 @@ module "my-cluster" {
 
   source = "terraform-aws-modules/eks/aws" 
 
-  cluster_name = "my-cluster" 
+  cluster_name = var.cluster_name
 
   cluster_version = "1.14" 
 
