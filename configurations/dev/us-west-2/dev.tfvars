@@ -4,3 +4,7 @@ s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_region = "us-west-2"             #Will be used to set backend.tf
 s3_folder_type = "state"                   #Will be used to set backend.tf
 s3_tfstate_file = "infrastructure.tfstate" #Will be used to set backend.tf
+vpc_id = "vpc-67dd1f1f"
+subnet1 = "subnet-250e515c"
+subnet2 = "subnet-d9a0d992"
+subnet3 = "subnet-a33d13f9"
