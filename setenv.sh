@@ -88,7 +88,7 @@ terraform_0.12.19 init
 echo "#################"
 
 
-echo "Please use terraform_0.11.14"
+echo "Please use terraform_0.12.19"
 
 
 
