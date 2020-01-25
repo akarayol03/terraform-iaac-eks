@@ -34,7 +34,7 @@ module "my-cluster" {
 
   cluster_name = var.cluster_name
 
-  cluster_version = "1.14" 
+  cluster_version = var.cluster_version 
 
   subnets = ["${var.subnet1}", "${var.subnet2}", "${var.subnet3}"]
 
@@ -42,9 +42,11 @@ module "my-cluster" {
 
   worker_groups = [{ 
 
-    instance_type = "m4.large" 
+    instance_type = var.instance_type 
 
-    asg_max_size = 5 
+    asg_max_size = var.asg_max_size 
+    asg_min_size = var.asg_min_size
+    
 
     } 
 
