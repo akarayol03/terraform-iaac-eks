@@ -1,4 +1,3 @@
-subnet2 = ""
 environment = "stage"
 s3_bucket = "amazon-eks-stage-team4"       #Will be used to set backend.tf
 s3_folder_project = "application"          #Will be used to set backend.tf
