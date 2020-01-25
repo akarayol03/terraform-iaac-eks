@@ -36,9 +36,9 @@ module "my-cluster" {
 
   cluster_version = "1.14" 
 
-  subnets = ["subnet-c74d1e8d", "subnet-e4820eb8", "subnet-1fe46778"] 
+  subnets = ["${var.subnet1}", "${var.subnet2}", "${var.subnet3}"]
 
-  vpc_id = "vpc-1471ad6e" 
+  vpc_id = var.vpc_id
 
   worker_groups = [{ 
 
