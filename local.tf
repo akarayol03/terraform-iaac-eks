@@ -1,6 +1,6 @@
 resource "null_resource" "login" {
   provisioner "local-exec" {
-    command = "aws eks --region $region update-kubeconfig --name $cluster_name"
+    command = "aws eks --region us-east-1 update-kubeconfig --name stage-cluster"
     interpreter = ["bash", "-e"]
   }
 }
