@@ -11,10 +11,10 @@ cluster_version = "1.14"
 
 # Mandatory changes per region
 cluster_name = "prod-eu-london-cluster"
-s3_bucket = "amazon-eks-prod-london-team4"        #Will be used to set backend.tf
+s3_bucket = "amazon-eks-prod-london-ahmet"        #Will be used to set backend.tf
 s3_folder_region = "eu-west-2"             #Will be used to set backend.tf
 region = "eu-west-2"
-vpc_id = "vpc-ca45d3a2"
-subnet1 = "subnet-78842002"
-subnet2 = "subnet-a57893e9"
-subnet3 = "subnet-6e52ca07"
+vpc_id = "vpc-dc8396ba"
+subnet1 = "subnet-9e7533f8"
+subnet2 = "subnet-ae0352e6"
+subnet3 = "subnet-9d30b0c7"
