@@ -10,7 +10,7 @@ cluster_version = "1.14"
 
 
 # Mandatory changes per region
-cluster_name = "prod-eu-ireland-cluster"
+cluster_name = "prod-cluster-ahmet"
 s3_bucket = "amazon-eks-prod-ireland-ahmet"        #Will be used to set backend.tf
 s3_folder_region = "eu-west-2"             #Will be used to set backend.tf
 region = "eu-west-2"
