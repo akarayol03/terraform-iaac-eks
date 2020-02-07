@@ -1,4 +1,4 @@
-environment = "prod-eu-london"
+environment = "prod-eu-ireland"
 s3_folder_project = "application"          #Will be used to set backend.tf
 s3_folder_type = "state"                   #Will be used to set backend.tf
 s3_tfstate_file = "infrastructure.tfstate" #Will be used to set backend.tf
@@ -10,8 +10,8 @@ cluster_version = "1.14"
 
 
 # Mandatory changes per region
-cluster_name = "prod-eu-london-cluster"
-s3_bucket = "amazon-eks-prod-london-ahmet"        #Will be used to set backend.tf
+cluster_name = "prod-eu-ireland-cluster"
+s3_bucket = "amazon-eks-prod-ireland-ahmet"        #Will be used to set backend.tf
 s3_folder_region = "eu-west-2"             #Will be used to set backend.tf
 region = "eu-west-2"
 vpc_id = "vpc-dc8396ba"
