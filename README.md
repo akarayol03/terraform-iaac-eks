@@ -75,3 +75,10 @@ kubectl config set-cluster dev-cluster
 aws eks --region eu-west-2  update-kubeconfig --name my-cluster 
 Instances and kubernetes should be on the same VPC since our kubernetes is local 
 kubectl get ns  
+
+kubectl get nodes
+create an nginx deployment with 
+kubectl run nginx --image=nginx:1.16 --env=NGINX_PORT=80 --replicas=3 --port=80
+
+or yaml file
+and deploy
