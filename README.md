@@ -66,6 +66,12 @@ variable "s3_bucket" {}
 variable "region" {}
 variable "asg_desired_capacity" {}
 
+run local.tf commands
+
+then 
+
+kubectl config set-cluster dev-cluster
+
 aws eks --region eu-west-2  update-kubeconfig --name my-cluster 
 Instances and kubernetes should be on the same VPC since our kubernetes is local 
 kubectl get ns  
