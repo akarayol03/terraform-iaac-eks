@@ -5,13 +5,17 @@ Installed wget unzip git
 downloaded terraform version 12.19
 unzipped and moved to /bin folder
 created repo
+bastion host public key added to Github
+
 Created those environments below
 /configurations/dev/region/dev.tfvars
 /configurations/dev/region/qa.tfvars
 /configurations/dev/region/stage.tfvars
 /configurations/dev/region/prod.tfvars
 
-Created s3 folder for each environment and added to tfvars file into each environment
+Created s3 folder manually for each environment and added to tfvars file into each environment or by using AWS CLI
+aws s3 mb s3://bucket-name --region (region-name)
+
 Then add values for those variables below in tfvars file
 region = ""
 s3_bucket = "" #Will be used to set backend.tf
@@ -61,3 +65,7 @@ variable "s3_tfstate_file" {}
 variable "s3_bucket" {}
 variable "region" {}
 variable "asg_desired_capacity" {}
+
+aws eks --region eu-west-2  update-kubeconfig --name my-cluster 
+Instances and kubernetes should be on the same VPC since our kubernetes is local 
+kubectl get ns  
