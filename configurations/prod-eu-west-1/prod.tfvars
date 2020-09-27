@@ -6,7 +6,7 @@ instance_type = "m4.large"
 asg_max_size = "48" 
 asg_desired_capacity = "3"
 asg_min_size = "3"
-cluster_version = "1.14"
+cluster_version = "1.17.9"
 
 
 # Mandatory changes per region
